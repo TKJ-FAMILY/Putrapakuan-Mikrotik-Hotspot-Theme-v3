@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="img/logo.png" rel="shortcut icon">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PutraPakuan Hotspot</title>
+	<link rel="stylesheet" href="css/putrapakuan-style.css">
+<!-- 	<link rel="stylesheet" href="css/bootstrap.css"> -->
+</head>
+<body>
+	$(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+	<div class="pp-container">
+		<div class="header">
+			<div class="pp-login modal" id="open-modal">
+				<form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif) class="modal-content animate form-login">
+					<input type="hidden" name="dst" value="$(link-orig)" />
+					<input type="hidden" name="popup" value="true" />
+					<img src="img/svg/x.svg" alt="Exit" class="exit" id="exit">
+					<h1><b>P</b>utra<b>P</b>akuan</h1>
+					$(if error)<br /><div style="color: #FF8080; font-size: 9px"><h3 style="font-size: 15px; background-color: #F1FF7D; color: #FF2323;font-style: italic; font-weight: bold; padding: 8px;border-radius: 10px">$(error)</div>$(endif)
+					<input type="username" name="username" id="username" placeholder="Username" autofocus required value="$(username)">
+					<input type="password" name="password" id="password" placeholder="Password" required>
+					<button type="submit">Login</button>
+					<ul>
+						<li>
+							<a href="https://www.youtube.com/channel/UCIxyHSQbW-i6eqmyI5KGfog"><img src="img/youtube.png" alt="Youtube"></a>
+							<a href="https://www.instagram.com/putra_pakuan_official/"><img src="img/instagram.png" alt="Instagram"></a>
+							<a href="https://www.facebook.com/TK-SMP-SMK-PUTRA-PAKUAN-BOGOR-225838367443056/timeline/"><img src="img/facebook.png" alt="Facebook"></a>
+						</li>
+
+					</ul>
+				</form>
+			</div>
+				<div class="side">
+					<div class="logo-side">
+						<img src="img/logo.png" alt="Yayasan Putra Pakuan" class="animate">
+						<p>SELAMAT DATANG DI <br>HOTSPOT PUTRA PAKUAN</p>
+					</div>
+				</div>
+		</div>
+		<div class="pp-content">
+			<div class="login-responsive">
+				<p>Klik Tombol Dibawah Ini Untuk Login</p>
+				<button type="submit" onclick="document.getElementById('open-modal').style.display='block'" style="width:auto;" onclick="document.getElementById('img1').style.zIndex = '1';">
+					LOGIN
+				</button>
+			</div>
+			<div class="web-school">
+				<a href="http://sdit.putrapakuan.sch.id/"><img src="img/sdit.png" alt="Official Web SDIT Putra Pakuan Bogor"><p>SDIT Putra Pakuan Bogor</p></a>
+
+				<a href="http://smp.putrapakuan.sch.id/"><img src="img/smp.png" alt="Official Web SMP Putra Pakuan Bogor"><p>SMP Putra Pakuan Bogor</p></a>
+				<a href="http://smk.putrapakuan.sch.id/"><img src="img/smk.png" alt="Official Web SMK Putra Pakuan Bogor"><p>SMK Putra Pakuan Bogor</p></a>
+				<a href="#"><img src="img/busines-putrapakuan.png" alt="Business Centre Putra Pakuan Bogor"><p>Business Centre</p></a>
+			</div>
+		</div>
+		<div class="footer">
+			&copy;2020 PutraPakuan
+		</div>
+	</div>
+<script>
+// Get the modal
+var modal = document.getElementById('open-modal');
+var exit = document.getElementById('exit')
+window.onclick = function(event) {
+    if (event.target == exit) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<script>
+<!--
+  document.login.username.focus();
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+/*
+Putrapakuan-Mikrotik-Hotspot-Theme-v3
+Tema versi 3 adalah tema dengan tampilan login yang lebih segar dan menarik dari versi sebelumnya
+
+Created : 10 August 2020
+Project Name: Putrapakuan Mikrotik Hotspot Theme
+Project Type: Web Based
+Project Version: v3
+Current Version: v3.0
+Language: HTML, CSS, JS
+Author: TKJ FAMILY Developer
+Author Website: https://tkj-family.000webhostapp.com/
+license: https://github.com/TKJ-FAMILY/Putrapakuan-Mikrotik-Hotspot-Theme#readme
+Source : https://tkj-family.github.io
+*/
+*{
+	margin: 0;
+	font-family: RobotoLight;
+}
+html,body{
+	height: 100%;
+}
+.pp-container{
+}
+/*
+=================
+Header
+=================
+*/
+.header{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: -webkit-linear-gradient(bottom, #514A9D, #24C6DC);
+  background: -moz-linear-gradient(bottom, #514A9D, #24C6DC);
+  background: linear-gradient(bottom, #514A9D, #24C6DC);
+  color: white;
+}
+/*
+=================
+Login Page
+=================
+*/
+.pp-login{
+	flex: 31%;
+	justify-content: center;
+	align-items: center;
+	padding: 70px 50px;
+}
+.form-login{
+	margin: 0 70px;
+	position: relative;
+	background-color: #fff;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 15px;
+}
+.form-login > label{
+	text-align: left;
+}
+.form-login > h1{
+	margin-bottom: 30px;
+	font-family: Smilen;
+	font-size: 4.5vw;
+	background: linear-gradient(27deg, rgba(81,74,157,1) 18%, rgba(12,129,145,1) 74%);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+.form-login > img{
+	position: absolute;
+}
+.form-login > h1 > b{
+	font-family: Smilen;
+	font-size: 6vw;
+}
+input, button{
+	margin: 20px 0;
+}
+input{
+	box-sizing: border-box;
+	outline: none;
+	font-size: 18px;
+	padding: 8px;
+	margin: 15px 0;
+	letter-spacing: 1px;
+	width: 100%;
+	color: #00B9D5;
+	font-weight: bold;
+	border-radius: 10px;
+	border: 1.2px solid #514A9D;
+}
+input:focus{
+	box-shadow: 1px 1px 6px #514A9D, -1px -1px 6px #514A9D;
+	transition: .5s;
+}
+span{
+	margin: 20px 0;
+}
+span:hover{
+	box-shadow: -1px -1px 4px #514A9D, 1px 1px 4px #514A9D; 
+}
+.exit{
+	position: absolute;
+	width: 40px;
+	right: 0px;
+	top: -1px;
+	display: none;
+	cursor: pointer;
+}
+.exit:hover{
+	-webkit-filter: drop-shadow(1px 1px 2px #514A9D);
+	filter: drop-shadow(1px 1px 2px #514A9D);
+	transition: .2s
+}
+.form-login > span{
+	border-radius: 10px;
+	border: 1px solid #514A9D;
+	height: 45px;
+	display: flex;
+	-moz-display: flex;
+	-webkit-display: flex;
+	justify-content: flex-start;
+	-moz-justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+}
+.form-login > button{
+	background-color: #514A9D;
+	border: none;
+	border-radius: 10px;
+	padding: 12px;
+	color: #fff;
+	font-size: 20px;
+	outline: none;
+	cursor: pointer;
+
+}
+.form-login > button:hover{
+	background-color: #454080;
+	outline: solid;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin-top: 10px;
+}
+li{
+	display: flex;
+	-webkit-display: flex;
+	-moz-display: flex;
+	-ms-display: flex;
+	justify-content: space-around;
+}
+ul > li > a > img{
+	width: 45px;
+}
+ul > li > a > img:hover{
+	filter: drop-shadow(1px 1px 4px #454080);
+	-webkit-filter: drop-shadow(1px 1px 4px #454080); 
+	-moz-filter: drop-shadow(1px 1px 4px #454080);
+}
+/*Modal*/
+
+/*
+=================
+side
+=================
+*/
+.side{
+	flex: 69%;
+	-webkit-flex: 70%;
+	-moz-flex: 70%;
+	padding: 40px 0;
+	font-family: RobotoLight;
+}
+.logo-side{
+	display: flex;
+	-webkit-display: flex;
+	-moz-display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.logo-side img{
+	width: 30vw;
+	margin: 20px 0;
+}
+.logo-side p{
+	margin: 20px 0;
+	padding: 10px;
+	font-size: 40px;
+}
+/*
+=================
+Content
+=================
+*/
+.login-responsive{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 100px;
+	text-align: center;
+}
+.login-responsive button{
+	padding: 20px 40px;
+	border: 2px solid #454080;
+	border-radius: 10px;
+	background: transparent;
+	color: #514A9D;
+	font-size: 20px;
+	font-weight: bold;
+	outline: none;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.login-responsive button:hover{
+	background-color: #514A9D;
+	color: #fff;
+	transition: .2s;
+}
+.login-responsive button:focus{
+	background-color: #514A9D;
+	color: #fff;
+	transition: .2s;
+}
+.pp-content{
+	margin: 20px 40px;
+}
+.web-school{
+	display: flex;
+	margin: 50px 10px;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.web-school img{
+	width: 150px;
+}
+.web-school img:hover{
+	filter: drop-shadow(5px 5px 15px #40B114);
+	transition: .2s;
+
+}
+.web-school a{
+	margin: 40px;
+}
+.web-school a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: #514A9D;
+}
+.web-school p{
+	margin-top: 15px;
+	text-align: center;
+}
+/*
+=================
+Footer
+=================
+*/
+.footer{
+	background-color: #413A8E;
+	padding: 20px;
+	color: #fff;
+	font-weight: bold;
+	display: flex;
+	justify-content: flex-end;
+}
+/*
+=============================
+Responsive Device & Animation
+=============================
+*/
+
+/* Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px){
+	.login-responsive{
+		display: none;
+	}
+	.gallery h1{
+		font-size: 40px;
+	}
+}
+@media screen and (max-width: 1000px){
+	.exit{
+		display: block;
+	}
+	.pp-login{
+		display: none;
+		flex: 0%;
+	}
+	.side{
+		flex: 100%;
+	}
+	.logo-side p{
+		font-size: 29px;
+	}
+	.cancelbtn {
+	  width: auto;
+	  padding: 10px 18px;
+	  background-color: #f44336;
+	}
+	.imgcontainer {
+	  text-align: center;
+	  margin: 24px 0 12px 0;
+	  position: relative;
+	}
+	.container {
+	  padding: 16px;
+	}
+	span.psw {
+	  float: right;
+	  padding-top: 16px;
+	}
+	.modal {
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 1; /* Sit on top */
+	  top: 0;
+	  width: 100%; /* Full width */
+	  height: 100%; /* Full height */
+	  overflow: auto; /* Enable scroll if needed */
+	  background-color: rgb(0,0,0); /* Fallback color */
+	  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	  padding-top: 60px;
+
+	}
+	.modal-content {
+	  background-color: #fefefe;
+	  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	  width: 60%; /* Could be more or less, depending on screen size */
+	}
+	.close {
+	  position: absolute;
+	  right: 25px;
+	  top: 0;
+	  color: #000;
+	  font-size: 35px;
+	  font-weight: bold;
+	}
+	.close:hover,
+	.close:focus {
+	  color: red;
+	  cursor: pointer;
+	}
+	.form-login > h1{
+		font-size: 10vw;
+	}
+	.form-login > h1 > b{
+		font-size: 14vw;
+	}
+	.header{
+		padding: 50px 0;
+	}
+}
+@media screen and (max-width: 800px){
+	.pp-login{
+		display: none;
+		flex: 0%;
+	}
+	.side{
+		flex: 100%;
+	}
+	.logo-side p{
+		font-size: 25px;
+	}
+	.column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+	.gallery{
+		padding: 50px;
+	}
+}
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .header{
+  	padding: 40px;
+  }
+  .logo-side img{
+  	width: 50vw;
+  }
+  .logo-side p{
+  	font-size: 5vw;
+  }
+}
+
+
+/*
+=================
+Fonts
+=================
+*/
+
+@font-face{
+	font-family: RobotoLight;
+	src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face{
+	font-family: Smasher;
+	src: url(../fonts/Smasher/Smasher.ttf);
+}
+@font-face{
+	font-family: Smilen;
+	src: url(../fonts/smilen/Smilen.otf);
+}
+@font-face{
+	font-family: Nasalization;
+	src: url(../fonts/Nasalization/nasalization-rg.ttf);
+}
