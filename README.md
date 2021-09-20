@@ -14,3 +14,23 @@ Tema versi 3 adalah tema dengan tampilan login yang lebih segar dan menarik dari
 
 Features
 - Link Sekolah
+
+## Website
+
+### Website Sekolah
+
+- www.putrapakuan.sch.id
+- www.sdit.putrapakuan.sch.id
+- www.smp.putrapakuan.sch.id
+- www.smk.putrapakuan.sch.id
+
+### Website Organisasi
+
+- https://tkj-family.000webhostapp.com
+- https://github.com/TKJ-FAMILY
+- https://tkj-family.github.io
+
+
+### Special Thanks
+
+Terimakasih yang telah memberi kontribusi selama proses pengembangan proyek ini &hearts;
